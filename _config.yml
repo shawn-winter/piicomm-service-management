@@ -1,0 +1,46 @@
+# Jekyll Configuration for PiiComm Service Management System Documentation
+title: "PiiComm Service Management System Documentation"
+description: "A comprehensive service management system featuring email-to-ticket automation, advanced reporting dashboard, AI-powered knowledge base, escalation workflows, and GitHub Pages deployment for handling customer communications and service requests"
+baseurl: ""
+url: "https://shawn-winter.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugin settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - docs/installation-guide.md
+  - docs/user-manual.md
+  - docs/api-documentation.md
+  - docs/troubleshooting.md
+  - docs/technical-specifications.md
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "page"
+      nav_order: 1
