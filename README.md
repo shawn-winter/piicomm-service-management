@@ -109,11 +109,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions, feedback, or support, please contact our support team:
 
-- **Email**: support@piicomm.com
-- **Phone**: +1 (555) 123-4567
+- **Email**: researchandevelopment@piicomm.com
+- **Phone**: +1 (888) 844-2007
 - **Website**: [www.piicomm.com](http://www.piicomm.com)
 
-Thank you for choosing the PiiComm Service Management System. We look forward to supporting your service management needs!
 ```
 
 This README.md file provides a structured and comprehensive overview of the PiiComm Service Management System, making it accessible and engaging for both users and developers.
