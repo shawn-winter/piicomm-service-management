@@ -194,7 +194,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        const https://YOUR_WORKFLOW_ID.m.pipedream.net = 'YOUR_PIPEDREAM_WORKFLOW_URL';
+        const https://eoxxx.m.pipedream.net = 'YOUR_PIPEDREAM_WORKFLOW_URL';
         
         // Navigation
         document.querySelectorAll('.nav-link').forEach(link => {
@@ -232,7 +232,7 @@
             };
             
             try {
-                const response = await fetch(https://YOUR_WORKFLOW_ID.m.pipedream.net, {
+                const response = await fetch(https://eoxxx.m.pipedream.net, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
@@ -253,7 +253,7 @@
         // Load functions
         async function loadDashboard() {
             try {
-                const response = await fetch(https://YOUR_WORKFLOW_ID.m.pipedream.net + '?operation=generate_report');
+                const response = await fetch(https://eoxxx.m.pipedream.net + '?operation=generate_report');
                 const report = await response.json();
                 
                 document.getElementById('total-tickets').textContent = report.totalTickets;
@@ -269,7 +269,7 @@
         
         async function loadTickets() {
             try {
-                const response = await fetch(https://YOUR_WORKFLOW_ID.m.pipedream.net + '?operation=list_tickets');
+                const response = await fetch(https://eoxxx.m.pipedream.net + '?operation=list_tickets');
                 const tickets = await response.json();
                 
                 const container = document.getElementById('tickets-container');
